@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Shortcircuits = () => {
-  return <div></div>;
+const ShortCircuits = () => {
+  const [text, setText] = useState(0);
+
+  return (
+    <>
+      <h1 className="text-5xl text-center">
+        {text ? "Text is true" : "Text is false"}
+      </h1>
+    </>
+  );
 };
 
-export default Shortcircuits;
+export default ShortCircuits;
